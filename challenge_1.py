@@ -103,6 +103,8 @@ def get_user_list():
 def get_user_details():
     """
     Method to fetch the user details based on the userid passed as query string
+    e.g. GET operation on /user?userid=usr1 will return the details of the user
+    with the userid 'usr1'
     """
     userid = request.args.get('userid')
     out_dict = {"user":{}}
